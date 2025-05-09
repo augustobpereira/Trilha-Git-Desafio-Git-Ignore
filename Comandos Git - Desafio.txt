@@ -1,0 +1,31 @@
+mkdir Desafio-Projeto-Git-Ignore
+
+cd Desafio-Projeto-Git-Ignore
+
+git init
+
+git remote add origin https://github.com/augustobpereira/Trilha-Git-Desafio-Git-Ignore.git
+
+git branch -M main
+
+touch debug.log
+
+mkdir build
+
+touch build/file.txt
+
+touch .env
+
+touch .gitignore
+
+echo "*.log" >> .gitignore
+
+echo "build/" >> .gitignore
+
+echo ".env" >> .gitignore
+
+git status
+
+git commit -m "Commit relacionado o arquivo gitignore"
+
+git push -u origin main
